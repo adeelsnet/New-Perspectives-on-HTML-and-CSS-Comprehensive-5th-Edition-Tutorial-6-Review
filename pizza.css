@@ -1,0 +1,166 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 6
+   Review Assignment
+
+   Pizza Order Style Sheet
+   Author: Adeel Ahmed
+   Date:   April 10, 2019
+
+   Filename:         pizza.css
+   Supporting Files: delivery.png, okay.png, warning.png
+
+*/
+
+form fieldset {
+	background-color: rgb(255,246,205);
+	border: 1px solid rgb(233,69,0);
+	float: left;
+	margin: 1%;
+}
+
+form fieldset#custInfo {
+	width: 35%;
+}
+
+form fieldset#buildPizza {
+	width: 60%;
+}
+
+fieldset#meat, fieldset#vegetables {
+	width: 47%;
+	background-color: rgb(237, 178, 174);
+}
+
+fieldset legend {
+	font-size: 0.9em;
+}
+
+label {
+	display: block;
+	font-size: 0.8em;
+	float: left;
+	clear: left;
+	width: 40%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 5px;
+}
+
+input {
+	display: block;
+	float: left;
+	width: 50%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+textarea {
+	display: block;
+	float: left;
+	width: 50%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 100px;
+}
+
+form img {
+	display: block;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#delTime {
+	width: 150px;
+}
+
+#sizeimage {
+	margin-left: 40%;
+}
+
+input[type="range"] {
+	width: 200px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+	background: transparent;
+}
+
+#crust {
+	float: left;
+	font-size: 0.8em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 150px;
+}
+
+#quantity {
+	width: 40px;
+}
+
+fieldset.optionGroup {
+	width: 50%;
+	border: none;
+	background-color: transparent;	
+}
+
+fieldset.optionGroup input[type="radio"] {
+	display: block;
+	width: 30px;
+}
+
+input[type="checkbox"] {
+	width: 20px;
+}
+
+input[type="submit"] {
+	width: 150px;
+	float: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#optionGroup {
+	float: left;
+}
+
+input:focus, select:focus, textarea:focus {
+	background-color: rgb(220,255,220);
+}
+
+input:focus:valid {
+	background: rgb(220, 255, 220) url(okay.png) bottom right no-repeat;
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+
+input:focus:invalid {
+	background: rgb(255, 232, 233) url(warning.png) bottom right no-repeat;
+	
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;	
+}
+
+#address:focus:valid {
+	background: rgb(220, 255, 220) url(okay.png) bottom right no-repeat;
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+
+#address:focus:invalid {
+	background: rgb(255, 232, 233) url(warning.png) bottom right no-repeat;
+	
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;	
+}
